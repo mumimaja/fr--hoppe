@@ -1,15 +1,15 @@
 // Definerer elementer 
-const dino = document.getElementById("dino");
-const cactus = document.getElementById("cactus");
+const ræv = document.getElementById("ræv");
+const svamp = document.getElementById("svamp");
 
 // Defininere hoppefuntion og bruger timout til at stoppe funktion
 // "jump" er defineret i CSS og er keyframe animation
 function jump() {
-  if (dino.classList != "jump") {
-    dino.classList.add("jump");
+  if (ræv.classList != "jump") {
+    ræv.classList.add("jump");
 
     setTimeout(function () {
-      dino.classList.remove("jump");
+      ræv.classList.remove("jump");
     }, 300);
   }
 }
@@ -23,17 +23,17 @@ function jump() {
 // Definerer hvordan dino løber mod cactus når den er i live 
 let isAlive = setInterval(function () {
   // get current dino Y position
-  let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+  let rævTop = parseInt(window.getComputedStyle(ræv).getPropertyValue("top"));
 
 
   // Definerer cactus position 
   // get current cactus X position
-  let cactusLeft = parseInt(
-    window.getComputedStyle(cactus).getPropertyValue("left")
+  let svampLeft = parseInt(
+    window.getComputedStyle(svamp).getPropertyValue("left")
   );
 
   // Definerer hvis(if) man rammer cactus er kommer der alert med død 
-  if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+  if (svampLeft < 50 && svampLeft > 0 && rævTop >= 140) {
     // collision
     alert("Game Over!");
   }

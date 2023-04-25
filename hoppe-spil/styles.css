@@ -5,11 +5,11 @@
     background-image: url('img/dinospil-bauggrund.png');
   }
   
-  #dino {
-    width: 50px;
-    height: 50px;
-    background-image: url(img/trex.png);
-    background-size: 50px 50px;
+  #ræv {
+    width: 40px;
+    height: 60px;
+    background-image: url(img/ræv.png);
+    background-size: 40px 60px;
     position: relative;
     top: 150px;
   }
@@ -40,15 +40,15 @@
     }
   }
   
-  #cactus {
-    width: 20px;
-    height: 40px;
+  #svamp {
+    width: 40px;
+    height: 20px;
     position: relative;
     top: 110px;
     left: 580px;
   
-    background-image: url("img/cactus.png");
-    background-size: 20px 40px;
+    background-image: url("img/svamp.png");
+    background-size: 40px 20px;
   
     animation: block 1s infinite linear;
   }
